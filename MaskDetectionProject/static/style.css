@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@100;500&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.header {
+    background: #690E6B;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.contenu {
+    display: flex;
+    background: linear-gradient(180deg, #4B12C4 0%, rgba(75, 18, 196, 0) 100%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+    border-radius: 5px;
+}
+.footer {
+    background: #690E6B;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.title1 {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+    color: #EDD0F1;
+}
+.Description {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 0 0;
+}
+
+.title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 42px;
+    color: #4B12C4;
+    background: #EDD0F1;
+    border-radius: 5px;
+}
+
+.pg {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.pg .left-img {
+    width: 166px;
+    height: 148px;
+
+    background: url(download.jpg);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+}
+
+.pg .right-img {
+    width: 166px;
+    height: 148px;
+
+    background: url(resultat.png);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.pg .fleche{
+    margin-top: 40px;
+}
+
+.form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    width: 491px;
+    height: 51px;
+    background: #A7E0F9;
+    border-radius: 5px;
+}
+
+input[type=file] {
+    color: #4B12C4;
+    margin-left: 40px;
+    
+}
+input[type=submit] {
+    color: #4B12C4;
+    margin-left: 40px;
+    background-color: chartreuse;
+}
+
+input[type=submit]:hover{
+    background-color: red;
+}
+
+.res {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.walo{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;
+    background-color: chartreuse;
+}
+
+.walo:hover{
+    background-color: red;
+}

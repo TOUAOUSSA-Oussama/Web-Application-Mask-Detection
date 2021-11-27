@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Mask Detection Application</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title1">Mask detection Application</div>
+    </div>
+    <div class="contenu">
+        <div class="Description">
+            <div class="title">Description</div>
+        </div>
+        <div class="pg">
+            Cette application vous permet de détecter vos propres images en une 
+            seule image puis de donner une prédiction sur le port du masque pour 
+            chaque visage détecté.
+        </div>
+        <div class="Description">
+            <div class="title">Environnement</div>
+        </div>
+        <div class="pg">
+            Le modèle utilisé pour la prédiction : MobileNet développé par 
+            tensorflow <br>
+            La bibliothèque utilisée pour la détection de visage : OpenCV
+        </div>
+        <div class="Description">
+            <div class="title">Exemple</div>
+        </div>
+        <div class="pg">
+            <div class="item"><img class="right-img" src="static/right.jpg" /></div>
+            <div class="item"><img class="fleche" src="https://img.icons8.com/officel/80/000000/refresh.png"/></div>
+            <div class="item"><img class="left-img" src="static/left.png"/></div>
+        </div>
+        <div class="Description">
+            <div class="title">Essayer l'application</div>
+        </div>
+        <div class="pg">
+            <form class="form" method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="file" name="fichier" class="btn"  accept=".jpg" required />
+                <input  type="submit" name="valider" class="submit" />
+               
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="title1">Oussama-Touaoussa-2021</div>
+    </div>
+
+</body>
+
+</html>
